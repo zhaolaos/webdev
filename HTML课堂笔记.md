@@ -37,7 +37,7 @@
 **备注：**
 在创建HTML网页文件时要注意文件的编码格式，常见的编码格式:ASC/GB2312/GBK/Unicode/_**UTF-8**_(推荐)
 ## 2.2 HTML发展历史
-![html发展历史](../images/html-history.png)
+![html发展历史](./images/html-history.png)
 ## 2.3 HTML语法
 - 双标记语法
 ```
