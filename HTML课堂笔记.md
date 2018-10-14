@@ -84,7 +84,7 @@
 - _图片/音频/视频_
 	- **图片**
 	> &lt;img src="images/a.jpg" alt="风景"&gt;
-	<img src="images/a.jpg" alt="风景" width="60%">
+	> <img src="images/a.jpg" alt="风景" width="60%">
 	- **音频视频**
 	```
 	<audio src="abc.mp3" controls>你的浏览器不支持音频标记</audio>  
