@@ -39,18 +39,18 @@
 ## 2.2 HTML发展历史
 ![html发展历史](./images/html-history.png)
 ## 2.3 HTML语法
-- 双标记语法
+- _双标记语法_
 ```
 <tag property1="value1" prop2="value2 ...">要显示的内容</tag>
 
 <tag>开始标记
 </tag>闭合标记
 ```
-- 单标记
+- _单标记_
 ```
 <tag property1="value1" prop2="value2 ...">
 ```
-- 注释语句
+-_ 注释语句_
 ```
 <!--Comments 注释内容-->
 ```
@@ -71,18 +71,58 @@
 </html>
 ```
 ## 2.5 HTML标记
-- 文本说明修饰控制等类
-	- 段落换行 <p align="left">This is a paragraph.<br>换行了</p>
-	- 标题 <h1>header1</h1>...<h6>header6</h6>
-	- 修饰/格式化 有含义的 <strong>加强</strong> <em>强调</em> H<sub>2</sub>O EC<sup>2</sup>  
+- _文本说明修饰控制等_
+	- **段落换行** <p align="left">This is a paragraph.<br>换行了</p>
+	- **标题** <h1>header1</h1>...<h6>header6</h6>
+	- **修饰/格式化** 有含义的 <strong>加强</strong> <em>强调</em> H<sub>2</sub>O EC<sup>2</sup>  
 	<small>small text</small> <mark>Marked text</mark> <del>Delete</del> <ins>Ins</ins>  
 	  无含义的 <b>Bold</b> <i>Italic</i> <u>Underline</u>
-	- 水平线 <hr>
-	- 预定义 <pre>预定义的内容   空格换行不会忽略</pre>
-	- 引用 <blockquote cite="引用内容的出处">长内容引用中的<q>短内容引用</q>。</blockquote>
-	- 地址 <address>家庭住址</address>
-
-
+	- **水平线** <hr>
+	- **预定义** <pre>预定义的内容   空格换行不会忽略</pre>
+	- **引用** <blockquote cite="引用内容的出处">长内容引用中的<q>短内容引用</q>。</blockquote>
+	- **地址** <address>家庭住址</address>
+- _图片/音频/视频_
+	- **图片**
+	> &lt;img src="images/a.jpg" alt="风景"&gt;
+	<img src="images/a.jpg" alt="风景" width="60%">
+	- **音频视频**
+	```
+	<audio src="abc.mp3" controls>你的浏览器不支持音频标记</audio>  
+	<vedio src="abc.mp4" controls>你的浏览器不支持该视频标记</vedio>
+	```
+	<audio controls>
+		<source src="abc.mp4">
+	</audio>
+- _列表_
+	- **无序列表**
+	```
+	<ul type="disc/circle/square"><li>列表项</li></ul>
+	```
+	- **有序列表**
+	```
+	<ol type="1/a/A/i/I"><li>列表项</li></ol>
+	```
+	- **定义列表**
+	```
+	<dl><dt>标题</dt><dd>描述</dd></dl>
+	```
+- _超链接_
+	- **定义超链接**
+	```
+	<a href="url">链接文字</a>
+	url：可以是相对路径（包含相对文档和相对站点根目录两种），也可以是绝对路径
+	```
+	- **定义锚点**（书签）
+	```
+	<a name="锚点名称">[锚点]</a>
+	<a href="url#锚点名称">链接文字</a>
+	```
+- _表格Table_
+	- **标记**
+	```
+	表格<table></table> 行<tr></tr> 表头<th></th> 单元格<td></td> 表格标题<caption></caption>
+	跨行单元格<td rowspan="行数"> 跨列单元格<td colspan="列数">
+	```
 
 
 
