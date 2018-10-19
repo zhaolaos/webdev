@@ -118,11 +118,51 @@
 	<a href="url#锚点名称">链接文字</a>
 	```
 - _表格Table_
-	- **标记**
+
 	```
 	表格<table></table> 行<tr></tr> 表头<th></th> 单元格<td></td> 表格标题<caption></caption>
 	跨行单元格<td rowspan="行数"> 跨列单元格<td colspan="列数">
 	```
+- _表单Form_
+	```
+	表单<form action="" method="get|post"></form>  
+	input表单域 <input type="text|password|radio|checkbox|file|hidden|email|image|submit|reset"  name="" value="">
+	button按钮<button type="button|submit|reset"> 建议使用按钮来代替input类型中的提交和重置
+	下来列表框<select><option value=""></option></select>
+	多行文本框<textarea cols="" rows="">内容</textarea>
+	HTML5中添加很多新的input类型，这里就不再一一列举额，一般情况所有的表单域要写到表单标记内部
+	```
+	注意表单中get和post方法的区别
+- _html框架_
+	```
+	框架集<frameset><frame ></framset>,已淘汰，尽量不用
+	嵌入框架<iframe src="url" width="" height="" framborder=""></iframe>
+	```
+- _其他常用标记_
+	```
+	常用于网页布局的<div></div>，控制局部文字的<span></span>
+	HTML5中新增的部分标记：
+		页面内容头部区域<header></header>
+		导航区域<nav></nav>
+		定义页面独立内容区域<article></article>
+		侧边栏区域<aside></aside>
+		定义文档中的节<section></section>
+		定义页脚部分<footer></footer>
+	```
+- _标记分类_
+	- 块状标记/区块标记（区块元素）
+	- 行内标记/内联标记
+- 转义字符
+	```
+	空格&nbsp; | '<' &lt; | '>' &gt; | '&' &amp; 等
+	```
+## 2.6 学习参考
+- [菜鸟教程](http://www.runoob.com/)
+- [w3cschool](https://www.w3cschool.cn/)
+- [CSDN技术论坛](https://bbs.csdn.net/)
+- 自己去发现吧^-^
+
+
 
 
 
