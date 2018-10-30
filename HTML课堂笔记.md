@@ -40,25 +40,25 @@
 ![html发展历史](./images/html-history.png)
 ## 2.3 HTML语法
 - _双标记语法_
-```
+```html
 <tag property1="value1" prop2="value2 ...">要显示的内容</tag>
 
 <tag>开始标记
 </tag>闭合标记
 ```
 - _单标记_
-```
+```html
 <tag property1="value1" prop2="value2 ...">
 ```
--_ 注释语句_
-```
+- _注释语句_
+```html
 <!--Comments 注释内容-->
 ```
 **备注：**
 1. HTML中不区分大小写，但是[W3C][w3c]推荐全部使用小写，这也是一种规范
 2. 大部分的标记都可以嵌套，但是要注意嵌套的顺序不要弄错
 ## 2.4 HTML文件基本结构
-```
+```html
 <!DOCTYPE html>                          文档声明
 <html>                                   包裹网页所有内容最外层标签，第1层架构
     <head>                               告知浏览器信息的头部区域，第2层架构
@@ -86,7 +86,7 @@
 	> &lt;img src="images/a.jpg" alt="风景"&gt;
 	> <img src="images/a.jpg" alt="风景" width="60%">
 	- **音频视频**
-	```
+	```html
 	<audio src="abc.mp3" controls>你的浏览器不支持音频标记</audio>  
 	<vedio src="abc.mp4" controls>你的浏览器不支持该视频标记</vedio>
 	```
@@ -95,36 +95,36 @@
 	</audio>
 - _列表_
 	- **无序列表**
-	```
+	```html
 	<ul type="disc/circle/square"><li>列表项</li></ul>
 	```
 	- **有序列表**
-	```
+	```html
 	<ol type="1/a/A/i/I"><li>列表项</li></ol>
 	```
 	- **定义列表**
-	```
+	```html
 	<dl><dt>标题</dt><dd>描述</dd></dl>
 	```
 - _超链接_
 	- **定义超链接**
-	```
+	```html
 	<a href="url">链接文字</a>
 	url：可以是相对路径（包含相对文档和相对站点根目录两种），也可以是绝对路径
 	```
 	- **定义锚点**（书签）
-	```
+	```html
 	<a name="锚点名称">[锚点]</a>
 	<a href="url#锚点名称">链接文字</a>
 	```
 - _表格Table_
 
-	```
+	```html
 	表格<table></table> 行<tr></tr> 表头<th></th> 单元格<td></td> 表格标题<caption></caption>
 	跨行单元格<td rowspan="行数"> 跨列单元格<td colspan="列数">
 	```
 - _表单Form_
-	```
+	```html
 	表单<form action="" method="get|post"></form>  
 	input表单域 <input type="text|password|radio|checkbox|file|hidden|email|image|submit|reset"  name="" value="">
 	button按钮<button type="button|submit|reset"> 建议使用按钮来代替input类型中的提交和重置
@@ -132,14 +132,14 @@
 	多行文本框<textarea cols="" rows="">内容</textarea>
 	HTML5中添加很多新的input类型，这里就不再一一列举额，一般情况所有的表单域要写到表单标记内部
 	```
-	注意表单中get和post方法的区别
+	注意表单中**get**和**post**方法的区别
 - _html框架_
-	```
+	```html
 	框架集<frameset><frame ></framset>,已淘汰，尽量不用
 	嵌入框架<iframe src="url" width="" height="" framborder=""></iframe>
 	```
 - _其他常用标记_
-	```
+	```html
 	常用于网页布局的<div></div>，控制局部文字的<span></span>
 	HTML5中新增的部分标记：
 		页面内容头部区域<header></header>
@@ -152,7 +152,7 @@
 - _标记分类_
 	- 块状标记/区块标记（区块元素）
 	- 行内标记/内联标记
-- 转义字符
+- _转义字符_
 	```
 	空格&nbsp; | '<' &lt; | '>' &gt; | '&' &amp; 等
 	```
