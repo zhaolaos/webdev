@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Float&Clear</title>
+    <style>
+        .container {
+            border: 1px solid red;
+        }
+        .leftContent {
+            width: 300px;
+            height: 400px;
+            border: 1px solid blue;
+            float: left;
+        }
+        .rightContent {
+            width: 500px;
+            height: 400px;
+            border: 1px solid green;
+            float: right;
+        }
+        .picList {
+            background-color: bisque;
+            height: 100px;
+            width: 200px;
+            display: block;
+        }
+        .cl {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="leftContent">leftContent</div>
+        <div class="rightContent">rightContent</div>
+        <div class="cl"></div>
+        <div class="picList">picList我是内容我
+            是内容我是内容我是内容我是内容我是内容
+            我是内容我是内容我是内容我是内容我是内
+            容我是内容我是
+            内容我是内容我是内容我是内容
+            我是内容我是内容</div>
+    </div>
+</body>
+</html>

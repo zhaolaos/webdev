@@ -1,0 +1,78 @@
+/* selector.css文件中主要定义CSS中选择器的种类，示例文件是selector.html */
+
+/* 通配符选择器 */
+* {
+    margin: 0;
+}
+.container {
+    width: 300px;
+    margin: 20px auto;
+    background-color: #eee!important; 
+    white-space: nowrap;
+    overflow: hidden;
+}
+.container-border {
+    border: 2px solid red;
+    background-color: blue;     
+}
+h2 {
+    font-family: 楷体, 宋体;
+    text-align: center;
+    text-shadow: 1px 1px red;
+    border-style: solid;
+    border-radius: 5px 10px 15px 5px;
+    padding: 5px;
+}
+/* 元素选择器（html tag selector） */
+p {
+    font-size: 1em;
+    background-color: #aaa;
+    height: 50px;
+    line-height: 50px;
+}
+/* id选择器（id selector） */
+#p1 {
+    color:red;
+}
+/* 类选择器（class selector） */
+.header {
+    font-family: 'Mcrosoft Yahei UI';
+}
+/* 属性选择器 */
+a[href="#"] {
+    color:red;
+}
+/* p元素之后的同级em元素 */
+p ~ em {
+    color: blue;
+}
+/* p元素之后紧邻的em元素 */
+/* p + em {
+    color: #000;
+} */
+/*
+伪类选择器
+    超链接伪类 :link, :hover, :visited, :active
+    指定元素伪类：nth-child(n),nth-last-child(n),last-child,first-child,only-child,
+    某种类型元素选择伪类：nth-of-type(n),nth-last-of-type(n),first-type,last-type,only-of-type
+    具有某种特性的伪类：empty,enabled,disabled,focus,checked,target
+    根伪类选择器：root
+
+*/
+a:link {
+    color: green;
+}
+a:hover {
+    text-decoration: none;
+}
+a:visited {
+    color: blue;
+}
+a:active {
+    color:brown;
+}
+/* 伪元素选择器 */
+#p1::after {
+    content: "我是在元素后面添加的伪元素";
+    color:brown;
+}

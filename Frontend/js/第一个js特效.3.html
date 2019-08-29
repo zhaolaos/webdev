@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+        <style>
+            #div1{
+                width:200px; 
+                height:50px; 
+                border:1px solid blue;
+                display: none;
+                background: gray;
+            }
+        </style>
+        <script>
+            // 使用window的onload方法是为了让页面加载完毕后在执行脚本内的函数
+            // 如果不使用该方法则需要把脚本代码放到实现特效的HTML元素后面，否则解释执行的错误
+            window.onload = function () {
+                var oDiv = document.getElementById('div1'); //在函数内部通过var关键词声明的变量为局部变量
+                oBtn = document.getElementById("btn"); // oBtn变量会被提升为全局变量
+            }
+            function show() {
+                // 把id=div1的div显示出来
+                oDiv.style.display='block';
+                oDiv.style.width='300px';
+                oBtn.value='隐藏';
+            }
+
+            function hide() {
+                oDiv.style.display='none';
+                oBtn.value='显示';
+            }
+
+        </script>
+    </head>
+    <body>
+        <input id="btn" value="显示" type="button"
+         onmouseover="javascript:show();" onmouseout="javascript:hide();">
+        <div id="div1">
+            要显示隐藏的的内容。。。。
+        </div>
+
+    </body>
+</html>

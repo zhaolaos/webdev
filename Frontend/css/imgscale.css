@@ -1,0 +1,29 @@
+/* 
+css过渡方式：
+
+linear： 线性过渡。等同于贝塞尔曲线(0.0, 0.0, 1.0, 1.0)
+ease： 平滑过渡。等同于贝塞尔曲线(0.25, 0.1, 0.25, 1.0)
+ease-in： 由慢到快。等同于贝塞尔曲线(0.42, 0, 1.0, 1.0)
+ease-out： 由快到慢。等同于贝塞尔曲线(0, 0, 0.58, 1.0)
+ease-in-out： 由慢到快再到慢。等同于贝塞尔曲线(0.42, 0, 0.58, 1.0)
+step-start： 等同于 steps(1, start)
+step-end： 等同于 steps(1, end)
+steps(<integer>[, [ start | end ] ]?)： 接受两个参数的步进函数。第一个参数必须为正整数，指定函数的步数。第二个参数取值可以是start或end，指定每一步的值发生变化的时间点。第二个参数是可选的，默认值为end。
+cubic-bezier(<number>, <number>, <number>, <number>)： 特定的贝塞尔曲线类型，4个数值需在[0, 1]区间内
+*/
+
+/* 图片放大样式，使用width属性改变图片大小时，图片在页面在页面占用的空间也会跟着变化
+从而影响周边的其他内容的呈现，导致页面变形；而使用transform变换属性则没有这些问题，
+就好像图片是在一个独立的层面, */
+img {
+    width: 20vw;
+    /* vertical-align: bottom; */
+    display: block;
+    opacity: .8;
+    transition: all .5s; /* 过渡的属性 过渡时间 过渡 过渡开始的延迟时间 */
+}
+img:hover {
+    transform: scale(1.2); 
+    opacity: 1;
+    /* width: 30vw; */
+}

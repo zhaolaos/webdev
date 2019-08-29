@@ -1,0 +1,36 @@
+@charset "uft-8";
+
+/* js实现返回页面顶端 */
+.height1600 {
+    height: 1600px;
+    width: 100%;
+}
+#rtop {
+    position: fixed;
+    /* opacity: 0; */
+    right: 50px;
+    bottom: 50px;
+}
+#rtop a {
+    display: block;
+    width: 35px;
+    height: 35px;
+    color: red;
+    border: 1px solid rgb(200,200,200);
+    text-decoration: none;
+    text-align: center;
+    line-height: 35px;
+    font-size: 20px;
+}
+#rtop p {
+    position: absolute;
+    top: -14px;
+    right: 42px;
+    height: 35px;
+    background-color: antiquewhite;
+    width: 100%;
+    display: none;
+}
+#rtop a:hover+p {
+    display: block;
+}

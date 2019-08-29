@@ -1,0 +1,18 @@
+.menu {
+    width: 500px;
+    height: 35px;
+    margin: 50px;
+    background-color: #00ff00;
+
+}
+.menu a {
+    display: inline-block;
+    width: 24%;
+    text-align: center;
+    line-height: 35px;
+    text-decoration: none;
+}
+.menu a:hover {
+    background-color: hsl(120, 81%, 23%);
+    color: #fff;
+}

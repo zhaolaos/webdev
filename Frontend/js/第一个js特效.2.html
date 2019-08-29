@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+        <style>
+            #div1{
+                width:200px; 
+                height:50px; 
+                border:1px solid blue;
+                display: none;
+                background: gray;
+            }
+        </style>
+
+    </head>
+    <body>
+        <input id="btn" value="显示" type="button"
+         onmouseover="javascript:show();" onmouseout="javascript:hide();">
+        <div id="div1">
+            要显示隐藏的的内容。。。。
+        </div>
+        <script>
+            oDiv = document.getElementById('div1');
+            oBtn = document.getElementById("btn");
+            function show() {
+
+                // 把id=div1的div显示出来
+                oDiv.style.display='block';
+                oDiv.style.width='300px';
+                oBtn.value='隐藏';
+            }
+
+            function hide() {
+                oDiv.style.display='none';
+                oBtn.value='显示';
+            }
+
+        </script>
+    </body>
+</html>

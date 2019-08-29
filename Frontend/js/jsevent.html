@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="uft-8">
+        <title>Event</title>
+        <style>
+            h2 {
+                border: 1px solid red;
+            }
+            ul {
+                border: 1px solid blue;
+            }
+            ul li {
+                border: 1px solid green;
+                margin: 2px;
+            }
+            mark {
+                background-color: black;
+                color: white;
+            }
+        </style>
+        <script>
+            window.onload = function () {
+
+                var h2 = document.getElementsByTagName("h2")[0];
+                h2.onclick = function () {
+                    alert('h2被点击了');
+                }
+
+                // h2.addEventListener("click", function() {
+                //     alert('h2被点击了');
+                // }, false);
+                
+            }
+        </script>
+    </head>
+    <body>
+        <h2>HTML&CSS&JS<mark>前端</mark>技术学习</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+        <!-- <script>
+            var h2 = document.getElementsByTagName("h2")[0];
+            h2.onclick = function () {
+                alert('h2被点击了');
+            }
+        </script> -->
+    </body>
+</html>

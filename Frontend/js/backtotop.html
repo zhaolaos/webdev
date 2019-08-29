@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>js实现返回页面顶端</title>
+        <link rel="stylesheet" href="backtotop.css">
+        <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+        <script>
+            // js实现，需要添加opacity样式
+            // window.onscroll = function ()
+            // {
+            //     var rtop = document.getElementById("rtop");
+            //     if(window.scrollY > 150) {
+            //         rtop.style.opacity = 1;
+            //         rtop.style.transition = "opacity 1s";
+            //     }else {
+            //         rtop.style.opacity = 0;
+            //     }
+            // }
+            // jquery实现,使用前先要去掉div#rtop的opacity样式
+            $(function ()
+            {
+                $(window).scroll(function ()
+                {
+                    if($(window).scrollTop() > 150) {
+                        $("#rtop").fadeIn(1000);
+                    }else {
+                        $("#rtop").fadeOut(1000);
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="height1600">
+            高度为1600px的div
+        </div>
+        <div id="rtop">
+            <a href="#" title="返回顶部">
+                <span class="glyphicon glyphicon-arrow-up"></span>
+            </a>
+        </div>
+    </body>
+</html>

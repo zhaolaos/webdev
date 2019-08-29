@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <title>用户注册</title>
+</head>
+<body>
+    <h3>用户注册</h3>
+    <form action="register.php" method="POST">
+        <label for="userName">用户名：</label>
+        <input type="text" name="userName" placeholder="输入用户名"><br>
+        <label for="pwd">密码：</label>
+        <input type="password" name="pwd" pattern="\{0-9a-zA-Z}\"><br>
+        <label for="">确认密码：</label>
+        <input type="password" name="pwd2"><br>
+        <label for="userEmail">Email:</label>
+        <input type="email" name="userEmail" id=""><br>
+        性别：
+        <input type="radio" name="sex" value="male" checked>男
+        <input type="radio" name="sex" value="female">女<br>
+        爱好：
+        <input type="checkbox" name="fav" value="football" checked>足球
+        <input type="checkbox" name="fav" value="swim">游泳<br>
+        家庭住址：
+        <select name="address" id="">
+            <option value="hebei">河北</option>
+            <option value="henan">河南</option>
+        </select><br>
+        自我介绍：<br>
+        <textarea name="" id="" cols="30" rows="5">sdfsdf</textarea><br>
+        <button type="submit">注册</button>
+        <button type="reset">重置</button>
+    </form>
+</body>
+</html>

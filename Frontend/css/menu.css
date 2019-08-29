@@ -1,0 +1,57 @@
+/* 初始化样式 */
+body,nav,ul,li {
+    margin: 0;
+    padding: 0;
+}
+/* 设定ul,a的公共样式 */
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+    white-space: nowrap;
+}
+/* 设定菜单导航条的样式 */
+nav {
+    width: 650px;
+    font-size: 18px;
+    color: aliceblue;
+    margin-top:100px;
+    margin-left: 200px;
+}
+/* 设定一级菜单样式 */
+.nav-ul {
+    background-color: green;
+    /* height: 44px; */
+}
+.nav-ul>li {
+    display: inline-block;
+    position: relative;
+    /* float: left; */
+    background: green;
+    width: 19.33%;
+    text-align: center;
+
+}        
+.nav-ul a {
+    display: block;
+    padding: 10px 20px;
+}
+.nav-ul a:hover {
+    background-color: #333;
+}
+/* 设定二级菜单的样式 */
+.nav-ul>li ul {
+    position: absolute;
+    min-width: 100%;
+    background-color: rgb(50,150,100);
+    display: none;
+}
+.nav-ul ul li{
+    position: relative;
+    /* left: -40px; */
+}
+.nav-ul a:hover + ul, .nav-ul li ul:hover {
+    display: block;
+}
