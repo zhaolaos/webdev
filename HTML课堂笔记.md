@@ -158,7 +158,7 @@ body内部包含的标签主要以下类别
 	注意表单中**get**和**post**方法的区别
 - _html框架_
 	```html
-	框架集<frameset><frame ></framset>,已淘汰，尽量不用
+	框架集<frameset><frame src=""></framset>,已淘汰，尽量不用
 	嵌入框架<iframe src="url" width="" height="" framborder=""></iframe>
 	```
 - _其他常用标记_
